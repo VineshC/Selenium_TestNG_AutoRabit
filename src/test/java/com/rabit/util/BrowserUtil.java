@@ -99,6 +99,7 @@ public final class BrowserUtil {
 	    DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
+		firefoxOptions.setBinary("C:\\Program Files\\Nightly\\firefox.exe");
 		firefoxOptions.addArguments("--headless");
 		webDriver = new FirefoxDriver(firefoxOptions);
 		return webDriver;
@@ -116,8 +117,7 @@ public final class BrowserUtil {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");	
 		options.addArguments("--headless");
-		options.addArguments("--disable-gpu");
-		
+		options.addArguments("--disable-gpu");		
 		options.addArguments("--test-type");
 
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
