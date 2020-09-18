@@ -99,7 +99,7 @@ public final class BrowserUtil {
 	    DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
-		firefoxOptions.setBinary("-profile");
+	
 		firefoxOptions.addArguments("--headless");
 		firefoxOptions.addArguments("--disable-notifications");	
 		firefoxOptions.addArguments("--disable-gpu");		
