@@ -99,8 +99,11 @@ public final class BrowserUtil {
 	    DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
-		firefoxOptions.setBinary("C:\\Program Files\\Nightly\\firefox.exe");
+		firefoxOptions.setBinary("-profile");
 		firefoxOptions.addArguments("--headless");
+		firefoxOptions.addArguments("--disable-notifications");	
+		firefoxOptions.addArguments("--disable-gpu");		
+		firefoxOptions.addArguments("--test-type");
 		webDriver = new FirefoxDriver(firefoxOptions);
 		return webDriver;
 	}
@@ -122,11 +125,9 @@ public final class BrowserUtil {
 
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		cap.setCapability(ChromeOptions.CAPABILITY, options);
+		cap.setCapability(ChromeOptions.CAPABILITY, options);	
 		
-		
-		options.setExperimentalOption("prefs", chromePreferences);
-		
+		options.setExperimentalOption("prefs", chromePreferences);		
 		options.setBinary(new File("/path/to/chrome"));
 		webDriver = new ChromeDriver(options);
 		return webDriver;
