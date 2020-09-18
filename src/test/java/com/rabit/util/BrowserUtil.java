@@ -99,7 +99,7 @@ public final class BrowserUtil {
 	    DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
-		
+		firefoxOptions.addArguments("--headless");
 		webDriver = new FirefoxDriver(firefoxOptions);
 		return webDriver;
 	}
