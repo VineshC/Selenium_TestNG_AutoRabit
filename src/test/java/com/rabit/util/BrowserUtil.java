@@ -72,7 +72,7 @@ public final class BrowserUtil {
 	}
 
 	public WebDriver getFirefoxWebDriver() {
-		System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
+System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		
 		FirefoxProfile profile = new FirefoxProfile();
 		
