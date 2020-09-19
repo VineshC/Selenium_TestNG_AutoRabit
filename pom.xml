@@ -15,8 +15,8 @@
 	  	<java.version>1.8</java.version>
 	  	<maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
 	  	<commons-lang3.version>3.8.1</commons-lang3.version>
-	  	<!-- <suite>custom</suite>
-	   	<browser>firefox</browser> -->
+	  	<!-- <suite>custom</suite>-->
+	   	<browser>firefox</browser> 
 	</properties>
 	<dependencies>
 		<!-- TestNG -->
