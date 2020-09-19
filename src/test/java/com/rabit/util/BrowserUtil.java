@@ -52,6 +52,7 @@ public final class BrowserUtil {
 		}
 		File driverFile = new File(driverPath);
 		driverFile.setExecutable(true);
+		System.out.println(driverFile);
 		return driverPath;
 	}
 
@@ -104,7 +105,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		firefoxOptions.addArguments("--disable-notifications");	
 		firefoxOptions.addArguments("--disable-gpu");		
 		firefoxOptions.addArguments("--test-type");
-		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		webDriver = new FirefoxDriver(firefoxOptions);
 		return webDriver;
 	}
