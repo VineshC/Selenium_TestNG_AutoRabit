@@ -69,6 +69,7 @@ public final class BrowserUtil {
 		}
 		File driverFile = new File(driverPath);
 		driverFile.setExecutable(true);
+		System.out.println(driverFile);
 		return driverPath;
 	}
 
@@ -101,7 +102,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
 	
-		firefoxOptions.addArguments("--headless");
+		//firefoxOptions.addArguments("--headless");
 		firefoxOptions.addArguments("--disable-notifications");	
 		firefoxOptions.addArguments("--disable-gpu");		
 		firefoxOptions.addArguments("--test-type");
@@ -120,19 +121,19 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		chromePreferences.put("download.default_directory", File.separator);
 
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-notifications");	
-		options.addArguments("--headless");
-		options.addArguments("--disable-gpu");		
 		options.addArguments("--test-type");
-
+		options.addArguments("--disable-notifications");
+		options.addArguments("--disable-gpu");
+		
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		cap.setCapability(ChromeOptions.CAPABILITY, options);	
+		cap.setCapability(ChromeOptions.CAPABILITY, options);
 		
-		options.setExperimentalOption("prefs", chromePreferences);		
-		options.setBinary(new File("/path/to/chrome"));
+		options.setExperimentalOption("prefs", chromePreferences);
 		webDriver = new ChromeDriver(options);
 		return webDriver;
+		
+		
 	}
 
 }
