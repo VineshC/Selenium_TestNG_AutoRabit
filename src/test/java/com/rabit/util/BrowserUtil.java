@@ -104,6 +104,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		firefoxOptions.addArguments("--disable-notifications");	
 		firefoxOptions.addArguments("--disable-gpu");		
 		firefoxOptions.addArguments("--test-type");
+		System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 		webDriver = new FirefoxDriver(firefoxOptions);
 		return webDriver;
 	}
