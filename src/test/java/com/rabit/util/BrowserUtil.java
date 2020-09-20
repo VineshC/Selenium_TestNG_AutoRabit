@@ -100,7 +100,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		profile.setPreference("permissions.default.desktop-notification", 1);
 	    DesiredCapabilities capabilities=DesiredCapabilities.firefox();
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
-		FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
+		FirefoxOptions firefoxOptions=new FirefoxOptions();
 	
 		//firefoxOptions.addArguments("--headless");
 		firefoxOptions.addArguments("--disable-notifications");	
