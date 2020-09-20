@@ -124,6 +124,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		options.addArguments("--test-type");
 		options.addArguments("--disable-notifications");
 		options.addArguments("--disable-gpu");
+		options.addArguments("--headless");
 		
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
