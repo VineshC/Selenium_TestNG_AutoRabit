@@ -16,7 +16,7 @@
 	  	<maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
 	  	<commons-lang3.version>3.8.1</commons-lang3.version>
 	  	<suite>custom</suite>
-	   	<browser>chrome</browser> 
+	   	<!-- <browser>chrome</browser>  -->
 	</properties>
 	<dependencies>
 		<!-- TestNG -->
@@ -104,7 +104,8 @@
 				<inherited>true</inherited>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suite}-${browser}-testng.xml</suiteXmlFile>
+						<suiteXmlFile>${suite}-chrome-testng.xml</suiteXmlFile>
+						<suiteXmlFile>${suite}-firefox-testng.xml</suiteXmlFile>
 						<!-- <useSystemClassLoader>false</useSystemClassLoader> -->
 					</suiteXmlFiles>
 					<argLine>-enableassertions</argLine>
