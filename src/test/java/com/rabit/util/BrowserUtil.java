@@ -10,6 +10,7 @@ import java.util.Map;
 import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -113,6 +114,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 	
 	public WebDriver getChromeWebDriver() {
 		System.setProperty("webdriver.chrome.driver", getChromeDriverPath());
+		WebDriver webDriver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
 		
 		Map<String, Object> chromePreferences = new Hashtable<String, Object>();
 		chromePreferences.put("profile.default_content_settings.popups", 0);
