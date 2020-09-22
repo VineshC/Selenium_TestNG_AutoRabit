@@ -114,7 +114,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 	
 	public WebDriver getChromeWebDriver() {
 		System.setProperty("webdriver.chrome.driver", getChromeDriverPath());
-		WebDriver webDriver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
+		//WebDriver webDriver= new ChromeDriver(new ChromeDriverService.Builder().usingPort(65530).build());
 		
 		Map<String, Object> chromePreferences = new Hashtable<String, Object>();
 		chromePreferences.put("profile.default_content_settings.popups", 0);
