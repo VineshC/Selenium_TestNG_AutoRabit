@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="88849" started-at="2020-09-28T06:24:05Z" finished-at="2020-09-28T06:25:34Z">
+  <suite name="Default suite" duration-ms="93537" started-at="2020-09-28T06:30:42Z" finished-at="2020-09-28T06:32:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="88849" started-at="2020-09-28T06:24:05Z" finished-at="2020-09-28T06:25:34Z">
+    <test name="Default test" duration-ms="93537" started-at="2020-09-28T06:30:42Z" finished-at="2020-09-28T06:32:16Z">
       <class name="com.rabit.tests.salesforce.LoginAndCreateAnOpportunity">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="setExtent" is-config="true" duration-ms="16" started-at="2020-09-28T11:54:05Z" finished-at="2020-09-28T11:54:05Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="setExtent" is-config="true" duration-ms="15" started-at="2020-09-28T12:00:42Z" finished-at="2020-09-28T12:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="openBrowser" is-config="true" duration-ms="10697" started-at="2020-09-28T11:54:05Z" finished-at="2020-09-28T11:54:16Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="openBrowser" is-config="true" duration-ms="10778" started-at="2020-09-28T12:00:42Z" finished-at="2020-09-28T12:00:53Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -25,11 +25,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testOpportunities()[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="testOpportunities" duration-ms="76283" started-at="2020-09-28T11:54:16Z" finished-at="2020-09-28T11:55:32Z">
+        <test-method status="PASS" signature="testOpportunities()[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="testOpportunities" duration-ms="78693" started-at="2020-09-28T12:00:53Z" finished-at="2020-09-28T12:02:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpportunities -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="closeBrowser" is-config="true" duration-ms="1843" started-at="2020-09-28T11:55:32Z" finished-at="2020-09-28T11:55:34Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="closeBrowser" is-config="true" duration-ms="4049" started-at="2020-09-28T12:02:12Z" finished-at="2020-09-28T12:02:16Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="endReport" is-config="true" duration-ms="0" started-at="2020-09-28T11:55:34Z" finished-at="2020-09-28T11:55:34Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.rabit.tests.salesforce.LoginAndCreateAnOpportunity@2c8d66b2]" name="endReport" is-config="true" duration-ms="0" started-at="2020-09-28T12:02:16Z" finished-at="2020-09-28T12:02:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

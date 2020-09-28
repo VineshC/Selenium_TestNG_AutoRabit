@@ -103,7 +103,7 @@ System.setProperty("webdriver.gecko.driver", getFirefoxDriverPath());
 		capabilities.setCapability(FirefoxDriver.PROFILE, profile);
 		FirefoxOptions firefoxOptions=new FirefoxOptions();
 	
-		//firefoxOptions.addArguments("--headless");
+		firefoxOptions.addArguments("--headless");
 		firefoxOptions.addArguments("--disable-notifications");	
 		firefoxOptions.addArguments("--disable-gpu");		
 		firefoxOptions.addArguments("--test-type");
