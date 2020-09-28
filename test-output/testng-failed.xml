@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <parameter name="browser" value="chrome"/>
-  <test thread-count="1" name="SalesforceTests">
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.rabit.tests.salesforce.LoginAndCreateAnAccount"/>
+      <class name="com.rabit.tests.salesforce.LoginAndCreateAnOpportunity"/>
     </classes>
-  </test> <!-- SalesforceTests -->
-  <test name="SalesforceTests(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.rabit.tests.salesforce.LoginAndCreateAnAccount">
-        <methods>
-          <include name="openBrowser"/>
-          <include name="setExtent"/>
-          <include name="testAccount"/>
-        </methods>
-      </class> <!-- com.rabit.tests.salesforce.LoginAndCreateAnAccount -->
-    </classes>
-  </test> <!-- SalesforceTests(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->
