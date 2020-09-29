@@ -104,7 +104,7 @@
 				<inherited>true</inherited>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suite}-chrome-testng.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>${suite}-chrome-testng.xml</suiteXmlFile>-->
 						<suiteXmlFile>${suite}-firefox-testng.xml</suiteXmlFile>
 						<!-- <useSystemClassLoader>false</useSystemClassLoader> -->
 					</suiteXmlFiles>
