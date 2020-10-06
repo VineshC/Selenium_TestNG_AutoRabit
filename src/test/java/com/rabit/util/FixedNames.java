@@ -18,7 +18,7 @@ public class FixedNames {
 	public static final String ARC32_FOLDER_NAME = "32";
 	public static final String ARC64_FOLDER_NAME = "64";
 	public static final String LINUX_CHROME_DRIVER_NAME = "chromedriver";
-	public static final String LINUX_FIREFOX_DRIVER_NAME = "geckodriver.gz";
+	public static final String LINUX_FIREFOX_DRIVER_NAME = "geckodriver.rar";
 	public static final String WINDOWS_CHROME_DRIVER_NAME = "chromedriver.exe";
 	public static final String WINDOWS_FIREFOX_DRIVER_NAME = "geckodriver.exe";
 	public static final String SCREEN_SHOT_FOLDER_NAME = "screenshot";
